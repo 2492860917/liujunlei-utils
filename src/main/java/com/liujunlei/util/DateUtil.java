@@ -11,6 +11,19 @@ import java.util.Date;
  * @date: 2020年1月2日 下午8:07:15
  */
 public class DateUtil {
+	
+	
+	//把传入的日期向前推 推减20个小时
+	public static Date subMonth(Date date) {
+		//实例化一个日历类
+		Calendar c=Calendar.getInstance();
+		//用传入的日期实例化日历类
+		c.setTime(date);
+		//借助日历类，减去一天
+		c.add(Calendar.DATE, -1);
+		return c.getTime();
+		
+	}
 
 	//获取一个月的月初 如 ：2020-01-01 00:00:00
 		public static Date initMonth(Date date) {
