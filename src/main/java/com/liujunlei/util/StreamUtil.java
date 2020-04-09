@@ -8,7 +8,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class StreamUtil {
-
+/**
+ * * 方法1：批量关闭流，参数能传入无限个。(10分)
+ * @param in
+ * @return
+ */
 	public static List<String> readLine(InputStream in){
 		List<String> list = new ArrayList<String>();
 		   BufferedReader reader = new BufferedReader(new InputStreamReader(in));
